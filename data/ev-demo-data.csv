@@ -1,0 +1,13 @@
+year,model,segment,range_km,battery_kwh,illustrative_records
+2022,Pulse Mini,Two-wheeler,105,3.2,120
+2022,Urban One,Passenger,285,42,90
+2022,Cargo E,Commercial,160,28,55
+2023,Pulse Mini,Two-wheeler,118,3.6,145
+2023,Urban One,Passenger,310,46,130
+2023,Cargo E,Commercial,178,31,78
+2024,Pulse Mini,Two-wheeler,132,4.1,180
+2024,Urban One,Passenger,338,51,170
+2024,Cargo E,Commercial,195,35,100
+2025,Pulse Mini,Two-wheeler,145,4.5,205
+2025,Urban One,Passenger,360,55,225
+2025,Cargo E,Commercial,215,38,128

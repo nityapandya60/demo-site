@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#071712">
+  <meta name="description" content="EV Market Analytics by Nitya Pandya — an interactive portfolio site for exploring electric vehicle data, market patterns, and Tableau insights.">
+  <title>EV/Insights — EV Market Analytics | Nitya Pandya</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js" defer></script>
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="EV Insights home"><span class="brand-mark">ϟ</span><span>EV<span class="brand-light">/INSIGHTS</span></span></a>
+    <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+      <a href="#overview">Overview</a><a href="#explorer">Data explorer</a><a href="#dashboard">Tableau</a><a href="#methodology">Methodology</a>
+    </nav>
+    <div class="header-actions">
+      <a class="nav-cta" href="https://github.com/nityapandya60/nitya_pandya_ev_market_analytics" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="main-nav"><span></span><span></span></button>
+    </div>
+  </header>
+  <main>
+    <section class="hero wrap" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span> MARKET INTELLIGENCE / ELECTRIC MOBILITY</div>
+        <h1>Reading the road<br>to an <em>electric</em><br>future.</h1>
+        <p class="hero-lede">An analytics portfolio exploring the signals behind electric mobility — from market patterns and vehicle specifications to the story told by data.</p>
+        <div class="hero-buttons">
+          <a class="button button-primary" href="#explorer">Explore the data <span>↓</span></a>
+          <a class="button button-ghost" href="https://github.com/nityapandya60/nitya_pandya_ev_market_analytics" target="_blank" rel="noopener noreferrer">View project source <span>↗</span></a>
+        </div>
+        <div class="stack-line"><span>PROJECT TOOLKIT</span><b>HTML</b><i></i><b>CSS</b><i></i><b>JavaScript</b><i></i><b>Python</b><i></i><b>SQL</b><i></i><b>Tableau</b></div>
+      </div>
+      <div class="hero-visual" aria-label="Abstract electric mobility illustration">
+        <div class="hero-grid"></div><div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="energy-core"><span>ϟ</span></div>
+        <div class="floating-stat stat-a"><span class="stat-kicker">ANALYTICS MODE</span><strong>Explore</strong><small><span class="status-dot"></span> Interactive experience</small></div>
+        <div class="floating-stat stat-b"><span class="stat-kicker">FROM DATA</span><strong>→ Decisions</strong><div class="spark-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+        <div class="hero-coordinates">EV MARKET / 001</div>
+      </div>
+      <div class="hero-index"><span>01 — THE BIG PICTURE</span><span>SCROLL TO EXPLORE <b>↓</b></span></div>
+    </section>
+    <section class="section wrap" id="overview">
+      <div class="section-head">
+        <div><div class="eyebrow">THE PROJECT</div><h2>Make the data<br><span class="dim">mean something.</span></h2></div>
+        <p class="section-intro">A clean, web-ready presentation layer for the EV Market Analytics project. Use it to communicate the analysis workflow, explore illustrative data visualizations, and surface the published Tableau workbook.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card"><div class="feature-top"><span class="feature-icon">↗</span><span class="mono">01 / TRENDS</span></div><h3>Market patterns</h3><p>Use time-based views to explore how the electric mobility landscape changes across the selected dataset.</p><span class="feature-arrow">↗</span></article>
+        <article class="feature-card"><div class="feature-top"><span class="feature-icon">⌁</span><span class="mono">02 / VEHICLES</span></div><h3>Range & efficiency</h3><p>Compare range and specification signals to understand the differences between EV models.</p><span class="feature-arrow">↗</span></article>
+        <article class="feature-card"><div class="feature-top"><span class="feature-icon">◫</span><span class="mono">03 / LANDSCAPE</span></div><h3>Manufacturer view</h3><p>Break down the available records by make, model, or segment to see where the dataset concentrates.</p><span class="feature-arrow">↗</span></article>
+        <article class="feature-card"><div class="feature-top"><span class="feature-icon">◎</span><span class="mono">04 / INSIGHTS</span></div><h3>Data storytelling</h3><p>Bring data preparation, structured queries, and visual communication into one clear project narrative.</p><span class="feature-arrow">↗</span></article>
+      </div>
+    </section>
+    <section class="explorer-section" id="explorer">
+      <div class="wrap">
+        <div class="section-head explorer-head">
+          <div><div class="eyebrow"><span class="status-dot"></span> INTERACTIVE LAB / SAMPLE VIEW</div><h2>Explore the <span class="dim">signals.</span></h2></div>
+          <p class="section-intro">Try the filters and charts below. These are illustrative demo values to demonstrate the website interaction; they are not presented as verified results from the repository dataset.</p>
+        </div>
+        <div class="dashboard-frame">
+          <div class="dash-topbar"><div class="window-controls"><i></i><i></i><i></i></div><div class="dash-title">EV / MARKET EXPLORER <span>DEMO DATA</span></div><div class="dash-live"><i></i> LOCAL PREVIEW</div></div>
+          <div class="filter-row">
+            <label>Vehicle segment<select id="segment-filter"><option value="all">All segments</option><option value="Passenger">Passenger</option><option value="Two-wheeler">Two-wheeler</option><option value="Commercial">Commercial</option></select></label>
+            <label>Year range<select id="year-filter"><option value="all">All years</option><option value="2022">2022</option><option value="2023">2023</option><option value="2024">2024</option><option value="2025">2025</option></select></label>
+            <button class="reset-button" id="reset-filters" type="button">Reset filters ↺</button>
+          </div>
+          <div class="kpi-grid">
+            <article class="kpi-card"><span>RECORDS IN VIEW</span><strong id="kpi-records">—</strong><small>Illustrative rows</small></article>
+            <article class="kpi-card"><span>AVG. RANGE</span><strong id="kpi-range">—</strong><small>km / charge</small></article>
+            <article class="kpi-card"><span>AVG. BATTERY</span><strong id="kpi-battery">—</strong><small>kWh capacity</small></article>
+            <article class="kpi-card"><span>SEGMENTS</span><strong id="kpi-segments">—</strong><small>Currently visible</small></article>
+          </div>
+          <div class="chart-grid">
+            <article class="chart-card chart-large"><div class="chart-heading"><div><span class="chart-index">A / TIMELINE</span><h3>Records by year</h3></div><span class="chart-unit">DEMO UNITS</span></div><div class="chart-area"><canvas id="trend-chart" aria-label="Illustrative records by year chart"></canvas></div></article>
+            <article class="chart-card"><div class="chart-heading"><div><span class="chart-index">B / MIX</span><h3>Segment split</h3></div><span class="chart-unit">SHARE</span></div><div class="chart-area chart-doughnut"><canvas id="segment-chart" aria-label="Illustrative segment split chart"></canvas></div><div class="legend-row" id="segment-legend"></div></article>
+            <article class="chart-card chart-large"><div class="chart-heading"><div><span class="chart-index">C / COMPARISON</span><h3>Average range by model</h3></div><span class="chart-unit">KM / CHARGE</span></div><div class="chart-area"><canvas id="range-chart" aria-label="Illustrative average range chart"></canvas></div></article>
+          </div>
+          <div class="dash-footer"><span><i class="status-dot"></i> Demo mode — replace with validated project data</span><button id="download-csv" class="text-button" type="button">Download demo CSV ↓</button></div>
+        </div>
+        <p class="disclaimer"><strong>Data note</strong> The interactive charts use a small, locally defined demonstration dataset. They are included to make the front end functional before the actual project data is connected. Replace <code>data/ev-demo-data.csv</code> and the records in <code>js/app.js</code> with verified project data before publishing analytical conclusions.</p>
+      </div>
+    </section>
+    <section class="section wrap" id="dashboard">
+      <div class="section-head">
+        <div><div class="eyebrow">TABLEAU / LIVE EMBED</div><h2>Your dashboard,<br><span class="dim">on this page.</span></h2></div>
+        <p class="section-intro">When the workbook is published to Tableau Public, paste its share URL into one configuration value and the live interactive dashboard will appear below.</p>
+      </div>
+      <div class="tableau-frame">
+        <div class="dash-topbar"><div class="window-controls"><i></i><i></i><i></i></div><div class="dash-title">TABLEAU PUBLIC <span>EMBED VIEW</span></div><a class="open-tableau" href="https://public.tableau.com/" target="_blank" rel="noopener noreferrer">Open Tableau ↗</a></div>
+        <div id="tableau-container" class="tableau-container">
+          <div class="tableau-empty">
+            <div class="empty-visual"><span>▥</span><i></i><i></i><i></i></div>
+            <div class="eyebrow">AWAITING PUBLISHED VIEW</div>
+            <h3>Connect the Tableau workbook</h3>
+            <p>Your packaged Tableau workbook is included with this website. Download it to open in Tableau Desktop. A browser cannot render a .twbx file as an interactive dashboard by itself; the live embed below becomes available after a Tableau Public publish URL is added.</p>
+            <a class="button button-primary" href="downloads/Nitya-Pandya-EV-Market-Analytics.twbx" download>Download Tableau workbook ↓</a>
+            <a class="inline-link" href="https://public.tableau.com/" target="_blank" rel="noopener noreferrer">Tableau Public publishing page ↗</a>
+            <a class="inline-link" href="https://github.com/nityapandya60/nitya_pandya_ev_market_analytics" target="_blank" rel="noopener noreferrer">Open the project repository ↗</a>
+          </div>
+        </div>
+        <div class="tableau-bottom"><span>Interactive view appears here after configuration</span><a href="https://github.com/nityapandya60/nitya_pandya_ev_market_analytics" target="_blank" rel="noopener noreferrer">Source repository ↗</a></div>
+      </div>
+    </section>
+    <section class="method-section" id="methodology">
+      <div class="wrap">
+        <div class="section-head">
+          <div><div class="eyebrow">HOW IT COMES TOGETHER</div><h2>A practical <span class="dim">analytics pipeline.</span></h2></div>
+          <p class="section-intro">The site is a static front end and can be hosted with GitHub Pages. The broader workflow can pair data preparation and SQL analysis with Tableau for interactive reporting.</p>
+        </div>
+        <div class="pipeline">
+          <article><span class="pipe-number">01</span><div class="pipe-icon">⌘</div><h3>Prepare</h3><p>Inspect, clean, and structure the source data.</p><span class="pipe-tech">PYTHON / PANDAS</span></article><div class="pipe-connector">→</div>
+          <article><span class="pipe-number">02</span><div class="pipe-icon">▤</div><h3>Query</h3><p>Use structured queries to answer focused questions.</p><span class="pipe-tech">SQL / SQLITE</span></article><div class="pipe-connector">→</div>
+          <article><span class="pipe-number">03</span><div class="pipe-icon">▥</div><h3>Visualize</h3><p>Turn patterns into charts and interactive dashboards.</p><span class="pipe-tech">TABLEAU</span></article><div class="pipe-connector">→</div>
+          <article><span class="pipe-number">04</span><div class="pipe-icon">↗</div><h3>Communicate</h3><p>Present the work clearly for review and discussion.</p><span class="pipe-tech">WEB / STORYTELLING</span></article>
+        </div>
+      </div>
+    </section>
+    <section class="closing-section wrap">
+      <div><div class="eyebrow">THE PROJECT, IN THE OPEN</div><h2>Good analysis should<br>be easy to <em>explore.</em></h2><p>Visit the source repository for the project files and documentation.</p></div>
+      <a class="button button-primary" href="https://github.com/nityapandya60/nitya_pandya_ev_market_analytics" target="_blank" rel="noopener noreferrer">View GitHub repository <span>↗</span></a>
+    </section>
+  </main>
+  <footer class="footer wrap"><a class="brand" href="#home"><span class="brand-mark">ϟ</span><span>EV<span class="brand-light">/INSIGHTS</span></span></a><span>EV Market Analytics · Nitya Pandya</span><a href="#home">Back to top ↑</a></footer>
+</body>
+</html>
